@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="ta" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRABHU MOBILES | மொபைல் சர்வீஸ், ஒரிஜினல் அக்சஸரீஸ் & லேப்டாப் OS | Thindal, Erode</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Noto+Sans+Tamil:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans Tamil"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              navy: '#050914',
+              dark: '#080d1a',
+              card: '#0f172a',
+              cardHover: '#15223e',
+              border: '#1e293b',
+              cyan: '#00d2ff',
+              blue: '#2563eb',
+              emerald: '#10b981',
+              amber: '#f59e0b',
+              purple: '#8b5cf6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-nav {
+      background: rgba(8, 13, 26, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 15%, rgba(0, 210, 255, 0.16) 0%, rgba(37, 99, 235, 0.08) 45%, rgba(5, 9, 20, 0) 80%);
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 9999px;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 25px rgba(245, 158, 11, 0.2); }
+      50% { transform: scale(1.02); box-shadow: 0 0 35px rgba(245, 158, 11, 0.4); }
+    }
+    .offer-pulse {
+      animation: pulseGlow 3.5s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-brand-navy text-slate-100 font-sans antialiased selection:bg-brand-cyan selection:text-slate-950 custom-scroll pb-16 lg:pb-0">
+
+  <!-- TOP STORE ANNOUNCEMENT STRIP -->
+  <div class="bg-gradient-to-r from-blue-950 via-slate-900 to-cyan-950 text-xs font-semibold px-4 py-2 text-center text-white flex flex-wrap items-center justify-center gap-2 sm:gap-4 border-b border-cyan-500/20">
+    <span class="flex items-center gap-1.5 text-cyan-300">
+      <i class="fa-solid fa-location-dot text-brand-cyan"></i>
+      <span>திண்டல், ஈரோடு (Opp. VCET Gym, Kaaraparai Piruvu)</span>
+    </span>
+    <span class="hidden md:inline text-cyan-300/40">|</span>
+    <span class="flex items-center gap-1.5 text-amber-300 font-bold">
+      <i class="fa-solid fa-gift"></i>
+      <span>மெகா ஆஃபர்: டிஸ்ப்ளே மாற்றினால் டெம்பர் கிளாஸ் + பவுச் முற்றிலும் இலவசம்!</span>
+    </span>
+    <span class="hidden md:inline text-cyan-300/40">|</span>
+    <a href="tel:+917373277700" class="flex items-center gap-1.5 text-brand-cyan hover:text-white font-bold transition">
+      <i class="fa-solid fa-phone"></i> +91 73732 77700
+    </a>
+  </div>
+
+  <!-- NAVIGATION BAR (Priority 1: Mobile Services, Offer & Accessories) -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-600 via-brand-cyan to-teal-400 p-[2px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition">
+            <div class="w-full h-full bg-brand-dark rounded-[14px] flex items-center justify-center">
+              <i class="fa-solid fa-mobile-screen-button text-2xl text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-blue-400"></i>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-xl sm:text-2xl font-black tracking-tight text-white">PRABHU</span>
+              <span class="text-xl sm:text-2xl font-black text-brand-cyan">MOBILES</span>
+            </div>
+            <p class="text-[11px] font-semibold text-slate-400 tracking-wider">பிரபு மொபைல்ஸ் • திண்டல், ஈரோடு</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden xl:flex items-center space-x-6 text-sm font-semibold text-slate-300">
+          <a href="#home" class="hover:text-brand-cyan transition">முகப்பு</a>
+          <a href="#offer" class="text-amber-400 hover:text-amber-300 flex items-center gap-1.5 font-bold transition">
+            <i class="fa-solid fa-gift text-xs"></i> சிறப்பு ஆஃபர்
+          </a>
+          <a href="#services" class="hover:text-brand-cyan transition">மொபைல் சர்வீஸ்</a>
+          <a href="#accessories" class="hover:text-brand-cyan transition">அக்சஸரீஸ்</a>
+          <a href="#tracker" class="hover:text-brand-cyan transition flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            Job Sheet Tracker
+          </a>
+          <a href="#gallery" class="hover:text-brand-cyan transition">கடை போட்டோஸ்</a>
+          <a href="#laptop-service" class="text-slate-400 hover:text-slate-200 transition text-xs border-l border-brand-border pl-4">
+            <i class="fa-solid fa-laptop text-xs mr-1 text-blue-400"></i> லேப்டாப் & OS
+          </a>
+          <a href="#reviews" class="hover:text-amber-400 transition flex items-center gap-1">
+            <i class="fa-brands fa-google text-xs text-blue-400"></i> கூகுள் ரிவ்யூஸ்
+          </a>
+          <a href="#contact" class="hover:text-brand-cyan transition">தொடர்புக்கு</a>
+        </nav>
+
+        <!-- Right Action Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-diamond-turn-right text-brand-cyan"></i> Google Maps
+          </a>
+          <a href="https://wa.me/917373277700?text=வணக்கம்%20பிரபு%20மொபைல்ஸ்,%20எனது%20மொபைல்%20சர்வீஸ்%20சம்பந்தமாக%20பேச%20வேண்டும்." target="_blank" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white shadow-lg shadow-emerald-500/20 transition flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="xl:hidden flex items-center">
+          <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="p-2 text-slate-300 hover:text-white focus:outline-none">
+            <i id="menuIcon" class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden xl:hidden border-t border-brand-border bg-brand-dark px-5 pt-3 pb-6 space-y-2.5">
+      <a href="#home" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-brand-card">முகப்பு (Home)</a>
+      <a href="#offer" class="mobile-link block px-3 py-2 rounded-lg font-bold text-amber-400 bg-amber-500/10 border border-amber-500/30">🎁 சிறப்பு ஆஃபர் (Free Glass + Pouch)</a>
+      <a href="#services" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-brand-card">மொபைல் பழுது நீக்கம் (Mobile Services)</a>
+      <a href="#accessories" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-brand-card">அக்சஸரீஸ் (Accessories Store)</a>
+      <a href="#tracker" class="mobile-link block px-3 py-2 rounded-lg font-medium text-brand-cyan hover:bg-brand-card">Live Job Sheet Tracker</a>
+      <a href="#gallery" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-brand-card">கடை & ஆய்வக போட்டோஸ்</a>
+      <a href="#laptop-service" class="mobile-link block px-3 py-2 rounded-lg font-medium text-blue-300 hover:bg-brand-card">💻 லேப்டாப் சர்வீஸ் & OS நிறுவுதல்</a>
+      <a href="#reviews" class="mobile-link block px-3 py-2 rounded-lg font-medium text-amber-300 hover:bg-brand-card">⭐ கூகுள் மேப்ஸ் ரிவ்யூஸ் & போட்டோஸ்</a>
+      <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-brand-card">கடை முகவரி & தொடர்புக்கு</a>
+      
+      <div class="pt-2 grid grid-cols-2 gap-2">
+        <a href="tel:+917373277700" class="text-center py-2.5 rounded-xl bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone"></i> Call Store
+        </a>
+        <a href="https://wa.me/917373277700?text=வணக்கம்%20பிரபு%20மொபைல்ஸ்" target="_blank" class="text-center py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRIORITY 1: HERO SECTION (100% SMARTPHONE FOCUSED) -->
+  <section id="home" class="relative overflow-hidden pt-10 pb-16 lg:pt-16 lg:pb-24 hero-glow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Column: Smartphone Service Pitch -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Rating Pill -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-brand-cyan text-xs font-bold">
+            <span class="flex text-amber-400">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="text-white font-black">5.0 / 5.0 Star Rating</span>
+            <span class="text-slate-400">• Google Verified in Thindal Erode</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+            திண்டல் ஈரோட்டின் <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-teal-300 to-blue-400">
+              நம்பர் 1 மொபைல் சர்வீஸ்
+            </span> & ஒரிஜினல் அக்சஸரீஸ் மையம்
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Apple iPhone, Samsung, OnePlus, Vivo, Oppo, Realme, Xiaomi உள்ளிட்ட அனைத்து முன்னணி ஸ்மார்ட்போன்களுக்கும் அதிநவீன மைக்ரோஸ்கோப் முறையில் சிப்-லெவல் பழுது நீக்கம், ஒரிஜினல் டிஸ்ப்ளே மாற்றம் மற்றும் சான்றளிக்கப்பட்ட பாகங்கள் பொருத்துதல்.
+          </p>
+
+          <!-- Combo Offer Mini-Banner -->
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-amber-500/20 via-orange-500/15 to-transparent border border-amber-500/40 text-left flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 text-xl flex-shrink-0">
+              <i class="fa-solid fa-gift animate-bounce"></i>
+            </div>
+            <div>
+              <span class="text-xs font-extrabold text-amber-300 uppercase tracking-wider">இன்றைய சிறப்பு மெகா சலுகை:</span>
+              <p class="text-xs sm:text-sm font-bold text-white mt-0.5">அனைத்து டிஸ்ப்ளே மாற்றினாலும் ஒரு டெம்பர் கிளாஸ், ஒரு பவுச் முற்றிலும் ஃப்ரீ!</p>
+            </div>
+          </div>
+
+          <!-- Exact Location Pill -->
+          <div class="p-4 rounded-2xl bg-brand-card/90 border border-brand-border text-left flex items-start gap-3.5 max-w-xl mx-auto lg:mx-0 shadow-lg">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-brand-cyan flex-shrink-0 mt-0.5">
+              <i class="fa-solid fa-location-dot text-lg"></i>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white uppercase tracking-wider">நேரடி கடை முகவரி (Store Location):</p>
+              <p class="text-xs text-slate-300 mt-0.5 leading-relaxed">
+                Gate 1, Kaaraparai Piruvu, To Villarasampatti Road, Opp. VCET Gym, Maruthi Nagar, Thindal, Erode - 638012
+              </p>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-1">
+            <a href="#services" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-brand-blue to-brand-cyan hover:from-blue-500 hover:to-cyan-400 text-slate-950 font-black text-sm uppercase tracking-wider shadow-lg shadow-cyan-500/25 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-screwdriver-wrench"></i> மொபைல் சேவைகள் (Mobile Services)
+            </a>
+            <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="px-7 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-white font-bold text-sm transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-diamond-turn-right text-brand-cyan"></i> கூகுள் மேப் வழித்தடம் (Directions)
+            </a>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-brand-border">
+            <div class="p-3 rounded-xl bg-brand-dark border border-brand-border text-left">
+              <p class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-stopwatch text-brand-cyan"></i> 30 Mins Fix</p>
+              <p class="text-[11px] text-slate-400 mt-0.5">விரைவு சர்வீஸ்</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-dark border border-brand-border text-left">
+              <p class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-brand-cyan"></i> Genuine Parts</p>
+              <p class="text-[11px] text-slate-400 mt-0.5">உத்தரவாத பாகங்கள்</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-dark border border-brand-border text-left">
+              <p class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-microchip text-brand-cyan"></i> Chip-Level</p>
+              <p class="text-[11px] text-slate-400 mt-0.5">IC Reballing லேப்</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-dark border border-brand-border text-left">
+              <p class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-brand-cyan"></i> 7 Days Open</p>
+              <p class="text-[11px] text-slate-400 mt-0.5">ஞாயிறும் திறந்திருக்கும்</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Desk & Google Verification -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="w-full max-w-md bg-gradient-to-b from-brand-card to-brand-dark border border-brand-border rounded-3xl p-6 shadow-2xl relative">
+            
+            <div class="flex items-center justify-between pb-4 border-b border-brand-border">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-xs font-bold text-white uppercase tracking-wider">PRABHU MOBILES THINDAL</span>
+              </div>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-semibold">
+                Open 9:30 AM - 9:30 PM
+              </span>
+            </div>
+
+            <!-- Microscope Station Photo -->
+            <div class="my-5 rounded-2xl overflow-hidden border border-brand-border relative group">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Smartphone Chip-Level Microscope Station" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent flex items-end p-4">
+                <div>
+                  <span class="text-[10px] font-bold uppercase tracking-wider bg-cyan-500 text-slate-950 px-2 py-0.5 rounded">High-Precision Micro Soldering</span>
+                  <h3 class="text-sm font-bold text-white mt-1">Smartphones Motherboard & Screen Repair Desk</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Business Card -->
+            <div class="p-4 rounded-2xl bg-[#091024] border border-cyan-500/30 flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-xl shadow">
+                  <i class="fa-brands fa-google text-blue-600"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-1 text-amber-400 text-xs">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <span class="font-extrabold text-white ml-1 text-sm">5.0 Star</span>
+                  </div>
+                  <p class="text-[11px] text-slate-400">Verified Google Maps Reviews</p>
+                </div>
+              </div>
+              <a href="#reviews" class="text-xs font-bold text-brand-cyan hover:underline flex items-center gap-1">
+                Reviews <i class="fa-solid fa-arrow-down text-[10px]"></i>
+              </a>
+            </div>
+
+            <!-- Free Consultation Prompt (Zero Cost) -->
+            <div class="p-4 rounded-2xl bg-gradient-to-r from-blue-900/40 to-slate-900/40 border border-blue-500/30 text-center">
+              <p class="text-xs text-slate-300 font-medium">இலவச மொபைல் குறைபாடு கண்டறிதல் & ஆலோசனைக்கு:</p>
+              <a href="tel:+917373277700" class="text-lg font-black text-white hover:text-brand-cyan transition block mt-1">
+                <i class="fa-solid fa-phone text-brand-cyan mr-1"></i> +91 73732 77700
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL COMBO MEGA OFFER (FREE TEMPERED GLASS + POUCH) -->
+  <section id="offer" class="py-14 bg-gradient-to-b from-brand-navy via-[#101935] to-brand-navy border-y border-amber-500/30 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative rounded-3xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/5 border-2 border-amber-500/40 p-6 sm:p-10 shadow-2xl overflow-hidden offer-pulse">
+        
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+          
+          <div class="space-y-4 max-w-2xl text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-black uppercase tracking-wider">
+              <i class="fa-solid fa-award"></i> பிரபு மொபைல்ஸ் பிரத்யேக சலுகை (Exclusive Offer)
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+              அனைத்து டிஸ்ப்ளே மாற்றினாலும் <br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-300 to-yellow-200">
+                ஒரு டெம்பர் கிளாஸ், ஒரு பவுச் முற்றிலும் ஃப்ரீ!
+              </span>
+            </h2>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              உங்கள் போனுக்கு அசல் தரத்திலான புதிய டிஸ்ப்ளே மாற்றும் போது, உங்கள் மொபைல் திரையைப் பாதுகாக்கும் <strong class="text-white">11D Edge-to-Edge Tempered Glass</strong> மற்றும் போனின் பின்பக்கத்தைப் பாதுகாக்கும் <strong class="text-white">Shockproof Back Pouch / Case</strong> இரண்டும் முற்றிலும் இலவசமாக பொருத்திக் கொடுக்கப்படும்!
+            </p>
+            
+            <div class="flex flex-wrap gap-3 pt-2 justify-center lg:justify-start text-xs font-semibold text-amber-200">
+              <span class="flex items-center gap-1.5 bg-brand-dark/80 px-3 py-1.5 rounded-lg border border-amber-500/30">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i> அனைத்து ஆண்ட்ராய்டு & ஐபோன் மாடல்களுக்கும் பொருந்தும்
+              </span>
+              <span class="flex items-center gap-1.5 bg-brand-dark/80 px-3 py-1.5 rounded-lg border border-amber-500/30">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i> இலவசமாக கடையில் ஒட்டித் தரப்படும்
+              </span>
+            </div>
+          </div>
+
+          <!-- Free Gifts Badges -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
+            <div class="bg-brand-dark/90 border border-amber-500/40 rounded-2xl p-4 text-center w-40 shadow-xl">
+              <div class="w-14 h-14 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mx-auto mb-2">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <span class="text-[10px] font-black uppercase tracking-wider bg-amber-500 text-slate-950 px-2 py-0.5 rounded font-mono">100% FREE</span>
+              <p class="text-xs font-bold text-white mt-1.5">11D Tempered Glass</p>
+              <p class="text-[10px] text-slate-400">முழு திரை பாதுகாப்பு</p>
+            </div>
+
+            <div class="text-amber-400 text-xl font-black">+</div>
+
+            <div class="bg-brand-dark/90 border border-amber-500/40 rounded-2xl p-4 text-center w-40 shadow-xl">
+              <div class="w-14 h-14 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 text-2xl mx-auto mb-2">
+                <i class="fa-solid fa-shield-cat"></i>
+              </div>
+              <span class="text-[10px] font-black uppercase tracking-wider bg-orange-500 text-slate-950 px-2 py-0.5 rounded font-mono">100% FREE</span>
+              <p class="text-xs font-bold text-white mt-1.5">Shockproof Pouch</p>
+              <p class="text-[10px] text-slate-400">கேமரா & எட்ஜ் பாதுகாப்பு</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-amber-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p class="text-xs text-slate-400 text-center sm:text-left">
+            * ஆஃபர் பெற உங்கள் மொபைலை திண்டல் பிரபு மொபைல்ஸ் கடைக்கு நேரில் கொண்டு வரலாம் அல்லது வாட்ஸ்அப்பில் தெரிவிக்கலாம்.
+          </p>
+          <a href="https://wa.me/917373277700?text=வணக்கம்%20பிரபு%20மொபைல்ஸ்,%20டிஸ்ப்ளே%20மாற்றினால்%20கிடைக்கும்%20இலவச%20டெம்பர்%20கிளாஸ்%20மற்றும்%20பவுச்%20ஆஃபர்%20விவரம்%20அறிய%20விரும்புகிறேன்." target="_blank" class="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-sm"></i> ஆஃபர் பெற வாட்ஸ்அப்பில் தொடர்பு கொள்க
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE MOBILE REPAIR SERVICES -->
+  <section id="services" class="py-20 bg-brand-dark border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan">முதன்மை சேவை • ஸ்மார்ட்போன் ஸ்பெஷலிஸ்ட்</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-1">Core Mobile Servicing Department</h2>
+        <p class="text-slate-400 text-sm mt-3">எந்தவிதமான சிக்கலான மொபைல் கோளாறுகளையும் அனுபவமிக்க டெக்னீஷியன்கள் மூலம் துல்லியமாக பரிசோதித்து சரிசெய்கிறோம். (கட்டணம் எதுவும் இன்றி இலவச குறைபாடு கண்டறிதல்)</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Screen Fix Card -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-border hover:border-cyan-500/50 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-brand-cyan text-2xl mb-4 group-hover:scale-110 transition">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-brand-cyan bg-cyan-500/10 px-2 py-0.5 rounded">Combo Offer Eligible</span>
+              <span class="text-[10px] text-amber-400 font-bold"><i class="fa-solid fa-gift"></i> Free Glass & Pouch</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mt-2">டிஸ்ப்ளே & டச் கிளாஸ் மாற்றம் (Screen Fitting)</h3>
+            <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+              AMOLED, OLED மற்றும் In-Cell டிஸ்ப்ளேக்கள் அசல் தரத்தில் பபுள்-இல்லாத OCA மெஷின் முறையில் 30 நிமிடங்களில் பொருத்தப்படும்.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-2 mt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Original Quality Touch Response</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Precision Frame Gluing & Clamping</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-cyan"></i> iPhone True Tone Support Restored</li>
+            </ul>
+          </div>
+          <div class="pt-5 mt-5 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> Genuine Spares</span>
+            <button onclick="prefillConsultation('Screen Replacement')" class="text-xs font-bold text-brand-cyan hover:underline flex items-center gap-1">
+              ஆலோசனை பெற <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Battery Fix Card -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-border hover:border-amber-500/50 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-4 group-hover:scale-110 transition">
+              <i class="fa-solid fa-battery-half"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded">High Backup Battery</span>
+            <h3 class="text-lg font-bold text-white mt-2">பேட்டரி மாற்றம் (Original Battery Care)</h3>
+            <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+              சார்ஜ் சீக்கிரம் இறங்குதல், போன் வீங்குவது, சூடாவது போன்ற பிரச்சனைகளுக்கு Grade-A செல் கொண்ட புதிய பேட்டரி மாற்றம்.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-2 mt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> High Backup Capacity</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> Overheat Protection Circuits</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> iPhone 100% Health Status Calibration</li>
+            </ul>
+          </div>
+          <div class="pt-5 mt-5 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> Tested Spares</span>
+            <button onclick="prefillConsultation('Battery Replacement')" class="text-xs font-bold text-brand-cyan hover:underline flex items-center gap-1">
+              ஆலோசனை பெற <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Chip-level Board Card -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-border hover:border-blue-500/50 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-2xl mb-4 group-hover:scale-110 transition">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded">Advanced Lab</span>
+            <h3 class="text-lg font-bold text-white mt-2">மதர்போர்டு சிப்-லெவல் & IC Reballing</h3>
+            <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+              டெட் ஆன போன்கள், Power IC, Audio IC, நெட்வொர்க் சிக்னல் பழுது, ஷார்ட் சர்க்யூட் போன்றவை மைக்ரோஸ்கோப் மூலம் சரிசெய்யப்படும்.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-2 mt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Stereo Microscope Soldering</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Dead Device Revival Specialist</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Short-Circuit Tracing & Leak Fix</li>
+            </ul>
+          </div>
+          <div class="pt-5 mt-5 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> Expert Lab</span>
+            <button onclick="prefillConsultation('Motherboard IC Repair')" class="text-xs font-bold text-brand-cyan hover:underline flex items-center gap-1">
+              ஆலோசனை பெற <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Water Damage Card -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-border hover:border-teal-500/50 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-2xl mb-4 group-hover:scale-110 transition">
+              <i class="fa-solid fa-droplet-slash"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 px-2 py-0.5 rounded">Emergency Service</span>
+            <h3 class="text-lg font-bold text-white mt-2">தண்ணீரில் விழுந்த போன் சீரமைப்பு (Water Damage)</h3>
+            <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+              நீரினால் ஏற்படும் துருவை அல்ட்ராசோனிக் கெமிக்கல் வாஷ் முறையில் நீக்கி, போனில் உள்ள தகவல்களைப் பாதுகாத்து மீண்டும் இயக்குதல்.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-2 mt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-teal-400"></i> Ultrasonic Sonic Board Bath</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-teal-400"></i> Data Preservation Priority</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-teal-400"></i> Thermal Chamber Dehydration</li>
+            </ul>
+          </div>
+          <div class="pt-5 mt-5 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> Fast Attention</span>
+            <button onclick="prefillConsultation('Water Damage Recovery')" class="text-xs font-bold text-brand-cyan hover:underline flex items-center gap-1">
+              ஆலோசனை பெற <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Charging Port & Audio Card -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-border hover:border-purple-500/50 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-4 group-hover:scale-110 transition">
+              <i class="fa-solid fa-plug-circle-bolt"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">Instant Counter Fix</span>
+            <h3 class="text-lg font-bold text-white mt-2">சார்ஜிங் போர்ட் & மைக் ஸ்பீக்கர் (Charging & Audio)</h3>
+            <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+              லூஸ் சார்ஜிங் போர்ட், மெதுவாக ஏறும் சார்ஜ், போன் பேசும்போது சத்தம் கேட்காமை, மைக் கோளாறுகள் உடனடியாக சரிசெய்யப்படும்.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-2 mt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Type-C & Lightning Flex Ports</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Earpiece & Ringer Mesh Cleaning</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> 20-30 Mins Express Replacement</li>
+            </ul>
+          </div>
+          <div class="pt-5 mt-5 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> In-Stock Parts</span>
+            <button onclick="prefillConsultation('Charging & Audio Port')" class="text-xs font-bold text-brand-cyan hover:underline flex items-center gap-1">
+              ஆலோசனை பெற <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Software Flashing & Unlocking -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-border hover:border-indigo-500/50 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-4 group-hover:scale-110 transition">
+              <i class="fa-solid fa-unlock-keyhole"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-2 py-0.5 rounded">Firmware Lab</span>
+            <h3 class="text-lg font-bold text-white mt-2">சாப்ட்வேர் அப்டேட் & அன்லாக் (Firmware & Lock)</h3>
+            <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+              லோகோவில் போன் ரீஸ்டார்ட் ஆவது (Bootloop), மறந்துபோன பாஸ்வேர்ட், ஹேங்கிங் கோளாறுகள் மற்றும் அதிகாரப்பூர்வ OS அப்டேட்கள்.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-2 mt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Official Stock ROM Flashing</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Pattern & Pin Reset Support</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Secure User Data Protection</li>
+            </ul>
+          </div>
+          <div class="pt-5 mt-5 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> Clean Software</span>
+            <button onclick="prefillConsultation('Software Flashing')" class="text-xs font-bold text-brand-cyan hover:underline flex items-center gap-1">
+              ஆலோசனை பெற <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FREE DIAGNOSIS BOX (STRICT ZERO PRICE) -->
+      <div id="consultation" class="mt-14 bg-gradient-to-br from-brand-card via-[#121c38] to-brand-navy rounded-3xl p-6 sm:p-10 border border-brand-border shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-cyan">
+              <i class="fa-solid fa-stethoscope"></i> இலவச மொபைல் பரிசோதனை கோரிக்கை
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white">உங்கள் மொபைல் பிராண்ட் & பிரச்சனை விவரம்</h3>
+            <p class="text-sm text-slate-300">பிராண்ட் மற்றும் பிரச்சனையை தேர்ந்தெடுத்து எங்கள் வாட்ஸ்அப் அல்லது கடைக்கு நேரடியாக அனுப்பலாம். கட்டணமில்லா இலவச குறைபாடு கண்டறிதல் செய்யப்படும்.</p>
+            
+            <div class="space-y-3 pt-2">
+              <div>
+                <label class="block text-xs font-bold text-slate-300 uppercase mb-1">மொபைல் பிராண்ட் (Brand)</label>
+                <select id="diagBrand" class="w-full bg-[#090e1c] border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan">
+                  <option value="Apple iPhone">Apple iPhone</option>
+                  <option value="Samsung Galaxy">Samsung Galaxy</option>
+                  <option value="OnePlus">OnePlus</option>
+                  <option value="Xiaomi / Redmi / Poco">Xiaomi / Redmi / Poco</option>
+                  <option value="Vivo / Oppo / Realme">Vivo / Oppo / Realme</option>
+                  <option value="Motorola / Google Pixel">Motorola / Google Pixel</option>
+                  <option value="Other Android Phone">Other Smartphone</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-300 uppercase mb-1">ஏற்படும் குறைபாடு (Device Issue)</label>
+                <select id="diagIssue" class="w-full bg-[#090e1c] border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan">
+                  <option value="Display Broken / Touch Fault">Display Broken / Touch Fault (Free Glass+Pouch)</option>
+                  <option value="Battery Draining Fast / Swollen">Battery Draining Fast / Swollen</option>
+                  <option value="Motherboard IC / Dead Condition">Motherboard IC / Dead Condition</option>
+                  <option value="Water Submerged Damage">Water Submerged Damage</option>
+                  <option value="Charging Port / Speaker Fault">Charging Port / Speaker Fault</option>
+                  <option value="Software Hang / Pattern Lock">Software Hang / Pattern Lock</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-300 uppercase mb-1">மாடல் பெயர் (Model - விருப்பப்பட்டால்)</label>
+                <input type="text" id="diagModel" placeholder="உதா: iPhone 13 / OnePlus Nord CE 3" class="w-full bg-[#090e1c] border border-brand-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-cyan">
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-[#080d1a] border border-brand-border space-y-4">
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+              <i class="fa-solid fa-gift"></i> சிறப்பு சலுகை நினைவூட்டல்
+            </span>
+            <h4 class="text-lg font-bold text-white">டிஸ்ப்ளே மாற்றினால் இலவச டெம்பர் கிளாஸ் & பவுச் உறுதி</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              திண்டல் கடைக்கு நேரில் வந்தால் உடனே 30 முதல் 45 நிமிடங்களில் உங்கள் மொபைல் பழுது நீக்கப்பட்டு, இலவச பாதுகாப்பு கிளாஸ் மற்றும் பவுச் பொருத்தப்படும்.
+            </p>
+            <div class="pt-2 space-y-3">
+              <button onclick="sendDiagnosisWhatsApp()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white font-extrabold text-xs uppercase tracking-wider shadow-lg shadow-emerald-600/20 transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i> வாட்ஸ்அப்பில் விவரம் பெற (Enquire on WhatsApp)
+              </button>
+              <a href="tel:+917373277700" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs flex items-center justify-center gap-2 transition border border-slate-700">
+                <i class="fa-solid fa-phone text-brand-cyan"></i> நேரடியாக அழைக்க: +91 73732 77700
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACCESSORIES STORE WITH REAL PRODUCT PHOTOS (NO PRICES) -->
+  <section id="accessories" class="py-20 bg-brand-navy border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan">PRABHU SMART ACCESSORIES</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">ஸ்மார்ட்போன் ஒரிஜினல் அக்சஸரீஸ்</h2>
+          <p class="text-slate-400 text-sm mt-2">அதிவேக சார்ஜர்கள், 11D டெம்பர் கிளாஸ், மேக்னடிக் கவர்கள், இயர்பட்ஸ் மற்றும் பவர் பேங்க் தொகுப்பு.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button onclick="filterAccessories('all')" class="acc-btn active px-3.5 py-1.5 rounded-lg text-xs font-bold bg-brand-cyan text-slate-950 transition">அனைத்தும் (All)</button>
+          <button onclick="filterAccessories('chargers')" class="acc-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-brand-card text-slate-300 hover:bg-brand-cardHover border border-brand-border transition">Fast Chargers</button>
+          <button onclick="filterAccessories('protection')" class="acc-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-brand-card text-slate-300 hover:bg-brand-cardHover border border-brand-border transition">Cases & Glass</button>
+          <button onclick="filterAccessories('audio')" class="acc-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-brand-card text-slate-300 hover:bg-brand-cardHover border border-brand-border transition">Audio & Earbuds</button>
+          <button onclick="filterAccessories('cables')" class="acc-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-brand-card text-slate-300 hover:bg-brand-cardHover border border-brand-border transition">Cables & Power</button>
+        </div>
+      </div>
+
+      <!-- Real Product Cards Grid with Photos -->
+      <div id="accGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Product 1: 65W GaN Fast Charger -->
+        <div class="acc-item rounded-2xl bg-brand-card border border-brand-border overflow-hidden p-5 flex flex-col justify-between group hover:border-cyan-500/50 transition" data-cat="chargers">
+          <div>
+            <div class="relative w-full h-44 rounded-xl overflow-hidden mb-4 border border-brand-border bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=600&q=80" alt="65W GaN Fast Charger" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500 text-slate-950">In Stock</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-brand-dark/90 text-brand-cyan border border-brand-border">Type-C PD</span>
+            </div>
+            <span class="text-[11px] text-brand-cyan font-bold uppercase tracking-wider">Fast Charging</span>
+            <h3 class="text-base font-bold text-white mt-1">65W GaN Dual Port Fast Adapter</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">iPhone, OnePlus, Samsung & Vivo போன்களுக்கான அதிக வேக பாதுகாப்பான GaN பவர் அடாப்டர்.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i> திண்டல் கடையில் உள்ளது
+            </span>
+            <button onclick="enquireProduct('65W GaN Fast Charger')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition">
+              <i class="fa-brands fa-whatsapp"></i> கேட்க
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: 11D Tempered Glass -->
+        <div class="acc-item rounded-2xl bg-brand-card border border-brand-border overflow-hidden p-5 flex flex-col justify-between group hover:border-cyan-500/50 transition" data-cat="protection">
+          <div>
+            <div class="relative w-full h-44 rounded-xl overflow-hidden mb-4 border border-brand-border bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80" alt="11D Tempered Glass" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500 text-slate-950">Free on Screen Fix</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-brand-dark/90 text-brand-cyan border border-brand-border">9H Hardness</span>
+            </div>
+            <span class="text-[11px] text-brand-cyan font-bold uppercase tracking-wider">Screen Protection</span>
+            <h3 class="text-base font-bold text-white mt-1">11D Privacy & Clear Tempered Glass</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">முழுமையான எட்ஜ்-டு-எட்ஜ் திரை பாதுகாப்பு மற்றும் பக்கவாட்டில் தெரியாத பிரைவசி கிளாஸ்.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i> இலவசமாக ஒட்டித் தரப்படும்
+            </span>
+            <button onclick="enquireProduct('11D Tempered Glass')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition">
+              <i class="fa-brands fa-whatsapp"></i> கேட்க
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Shockproof Armor Cases -->
+        <div class="acc-item rounded-2xl bg-brand-card border border-brand-border overflow-hidden p-5 flex flex-col justify-between group hover:border-cyan-500/50 transition" data-cat="protection">
+          <div>
+            <div class="relative w-full h-44 rounded-xl overflow-hidden mb-4 border border-brand-border bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=600&q=80" alt="Shockproof Armor Case" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500 text-slate-950">Free on Screen Fix</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-brand-dark/90 text-brand-cyan border border-brand-border">Drop-Proof</span>
+            </div>
+            <span class="text-[11px] text-brand-cyan font-bold uppercase tracking-wider">Heavy Duty Armor</span>
+            <h3 class="text-base font-bold text-white mt-1">Shockproof Matte & MagSafe Cases</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">கேமரா லென்ஸ் பம்ப் பாதுகாப்பு, கைகளில் நழுவாமல் பிடிக்கும் மேட் பினிஷிங் கவர்கள்.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i> All Models Fit
+            </span>
+            <button onclick="enquireProduct('Shockproof Cases')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition">
+              <i class="fa-brands fa-whatsapp"></i> கேட்க
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4: 6A Braided Type-C Cable -->
+        <div class="acc-item rounded-2xl bg-brand-card border border-brand-border overflow-hidden p-5 flex flex-col justify-between group hover:border-cyan-500/50 transition" data-cat="cables">
+          <div>
+            <div class="relative w-full h-44 rounded-xl overflow-hidden mb-4 border border-brand-border bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" alt="Braided Charging Cable" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500 text-slate-950">In Stock</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-brand-dark/90 text-brand-cyan border border-brand-border">6A Fast Charge</span>
+            </div>
+            <span class="text-[11px] text-brand-cyan font-bold uppercase tracking-wider">Nylon Braided Tough</span>
+            <h3 class="text-base font-bold text-white mt-1">6A Super VOOC / PD Type-C Cable</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">வளைந்தாலும் உடையாத நைலான் பின்னல், அதிவேக சார்ஜிங் மற்றும் டேட்டா பரிமாற்றம்.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i> 100% Tested
+            </span>
+            <button onclick="enquireProduct('6A Braided Cable')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition">
+              <i class="fa-brands fa-whatsapp"></i> கேட்க
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 5: Wireless Neckband -->
+        <div class="acc-item rounded-2xl bg-brand-card border border-brand-border overflow-hidden p-5 flex flex-col justify-between group hover:border-cyan-500/50 transition" data-cat="audio">
+          <div>
+            <div class="relative w-full h-44 rounded-xl overflow-hidden mb-4 border border-brand-border bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80" alt="Wireless Bluetooth Neckband" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500 text-slate-950">In Stock</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-brand-dark/90 text-brand-cyan border border-brand-border">40H Playtime</span>
+            </div>
+            <span class="text-[11px] text-brand-cyan font-bold uppercase tracking-wider">Bass & Clear Calling</span>
+            <h3 class="text-base font-bold text-white mt-1">Wireless ANC Bluetooth Neckband</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">மேக்னடிக் இயர்பட்ஸ், துல்லியமான வாய்ஸ் காலிங் மைக் மற்றும் நீண்ட பேட்டரி பேக்-அப்.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i> Premium Sound
+            </span>
+            <button onclick="enquireProduct('Wireless Neckband')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition">
+              <i class="fa-brands fa-whatsapp"></i> கேட்க
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 6: TWS Earbuds -->
+        <div class="acc-item rounded-2xl bg-brand-card border border-brand-border overflow-hidden p-5 flex flex-col justify-between group hover:border-cyan-500/50 transition" data-cat="audio">
+          <div>
+            <div class="relative w-full h-44 rounded-xl overflow-hidden mb-4 border border-brand-border bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80" alt="TWS Bluetooth Earbuds" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500 text-slate-950">In Stock</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-brand-dark/90 text-brand-cyan border border-brand-border">ENC Mic</span>
+            </div>
+            <span class="text-[11px] text-brand-cyan font-bold uppercase tracking-wider">Low Latency TWS</span>
+            <h3 class="text-base font-bold text-white mt-1">True Wireless Stereo Gaming Earbuds</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">சுற்றுப்புற இரைச்சலை நீக்கும் ENC மற்றும் வீடியோ / கேமிங்கிற்கு ஏற்ற லோ லேட்டன்சி.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i> Demo Available
+            </span>
+            <button onclick="enquireProduct('TWS Gaming Earbuds')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition">
+              <i class="fa-brands fa-whatsapp"></i> கேட்க
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 7: 20000mAh Power Bank -->
+        <div class="acc-item rounded-2xl bg-brand-card border border-brand-border overflow-hidden p-5 flex flex-col justify-between group hover:border-cyan-500/50 transition" data-cat="cables">
+          <div>
+            <div class="relative w-full h-44 rounded-xl overflow-hidden mb-4 border border-brand-border bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1609592424360-143d1767b43d?auto=format&fit=crop&w=600&q=80" alt="20000mAh Power Bank" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500 text-slate-950">In Stock</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-brand-dark/90 text-brand-cyan border border-brand-border">22.5W Fast</span>
+            </div>
+            <span class="text-[11px] text-brand-cyan font-bold uppercase tracking-wider">Backup Power</span>
+            <h3 class="text-base font-bold text-white mt-1">20,000 mAh 22.5W Fast Power Bank</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">பயணங்களுக்கு ஏற்ற மூன்று போர்ட் வசதி மற்றும் டிஜிட்டல் பேட்டரி பர்சன்டேஜ் டிஸ்ப்ளே.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i> Flight Safe
+            </span>
+            <button onclick="enquireProduct('20000mAh Power Bank')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition">
+              <i class="fa-brands fa-whatsapp"></i> கேட்க
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 8: Magnetic Car Mount -->
+        <div class="acc-item rounded-2xl bg-brand-card border border-brand-border overflow-hidden p-5 flex flex-col justify-between group hover:border-cyan-500/50 transition" data-cat="chargers">
+          <div>
+            <div class="relative w-full h-44 rounded-xl overflow-hidden mb-4 border border-brand-border bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&w=600&q=80" alt="Magnetic Car Mount Holder" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500 text-slate-950">In Stock</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-bold bg-brand-dark/90 text-brand-cyan border border-brand-border">360 Rotation</span>
+            </div>
+            <span class="text-[11px] text-brand-cyan font-bold uppercase tracking-wider">Car Utility</span>
+            <h3 class="text-base font-bold text-white mt-1">Magnetic 360° Car Dashboard Mount</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">காரில் மேப் பார்க்கும் போது ஆடாமல் பிடித்துக் கொள்ளும் வலுவான மேக்னடிக் ஹோல்டர்.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-400"></i> Universal Fit
+            </span>
+            <button onclick="enquireProduct('Magnetic Car Mount')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition">
+              <i class="fa-brands fa-whatsapp"></i> கேட்க
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE MOBILE JOB SHEET TRACKER -->
+  <section id="tracker" class="py-20 bg-brand-dark border-t border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan">நேரலை சர்வீஸ் நிலை (Live Tracker)</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Track Your Mobile Repair Job Sheet</h2>
+        <p class="text-slate-400 text-sm mt-2">கடை கவுண்டரில் பெறப்பட்ட ஜாப் ஷீட் எண்ணை உள்ளிட்டு உங்கள் மொபைல் பழுது நீக்கும் நிலையை உடனுக்குடன் அறியலாம்.</p>
+      </div>
+
+      <!-- Search Box -->
+      <div class="bg-brand-card rounded-2xl p-6 sm:p-8 border border-brand-border shadow-2xl">
+        <div class="flex flex-col sm:flex-row gap-3">
+          <div class="relative flex-1">
+            <i class="fa-solid fa-receipt absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input id="jobSheetInput" type="text" placeholder="Job Sheet ID (e.g. PM-1024, PM-1025)" value="PM-1024" class="w-full bg-[#0a0f1e] border border-brand-border rounded-xl pl-11 pr-4 py-3.5 text-white text-sm uppercase font-semibold focus:outline-none focus:border-brand-cyan">
+          </div>
+          <button onclick="searchJobStatus()" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-brand-cyan hover:from-blue-500 hover:to-cyan-400 font-bold text-sm text-slate-950 transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-magnifying-glass"></i> நிலை பார்க்க (Check Status)
+          </button>
+        </div>
+
+        <!-- Sample Demo IDs -->
+        <div class="flex flex-wrap items-center gap-2 mt-4 text-xs text-slate-400">
+          <span>மாதிரி ரசீது எண்கள் (Sample Job IDs):</span>
+          <button onclick="fillJobId('PM-1024')" class="px-2.5 py-1 rounded bg-brand-navy hover:bg-slate-800 text-brand-cyan border border-brand-border font-mono">PM-1024 (In Repair)</button>
+          <button onclick="fillJobId('PM-1025')" class="px-2.5 py-1 rounded bg-brand-navy hover:bg-slate-800 text-emerald-400 border border-brand-border font-mono">PM-1025 (Ready for Pickup)</button>
+          <button onclick="fillJobId('PM-1026')" class="px-2.5 py-1 rounded bg-brand-navy hover:bg-slate-800 text-amber-400 border border-brand-border font-mono">PM-1026 (Quality Check)</button>
+        </div>
+
+        <!-- Output Container -->
+        <div id="jobStatusOutput" class="mt-8 pt-6 border-t border-brand-border">
+          <!-- Dynamically populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORE PHOTO GALLERY & LAB WORKSTATION -->
+  <section id="gallery" class="py-20 bg-brand-navy border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan">எங்கள் திண்டல் கடை & ஆய்வகம்</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-1">Store Photos & Advanced Workstation</h2>
+        <p class="text-slate-400 text-sm mt-2">நேரடியாக எங்கள் கடைக்கு வந்து மொபைல் பரிசோதனை செய்து கொள்ளலாம். உயர் தொழில்நுட்ப கருவிகள் கொண்ட எங்கள் சர்வீஸ் டெஸ்க்.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Photo 1: Microscope Desk -->
+        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border group hover:border-cyan-500/50 transition">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=80" alt="Microscope Chip Level Desk" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold bg-blue-600/90 text-white backdrop-blur">Microscope Precision</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-sm font-bold text-white">Chip-Level Soldering Bench</h3>
+            <p class="text-xs text-slate-400 mt-1">Motherboard IC, CPU reballing and micro-soldering station.</p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Display Laminating Machine -->
+        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border group hover:border-cyan-500/50 transition">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80" alt="Display & Glass Fitting Room" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold bg-cyan-600/90 text-white backdrop-blur">OEM Displays</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-sm font-bold text-white">Display & Glass Fitting Room</h3>
+            <p class="text-xs text-slate-400 mt-1">Bubble-free OCA machine for crisp touch response & fitting.</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Accessories Counter -->
+        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border group hover:border-cyan-500/50 transition">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=700&q=80" alt="Accessories Store Racks" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold bg-amber-600/90 text-white backdrop-blur">Storefront Rack</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-sm font-bold text-white">Gadget & Accessories Section</h3>
+            <p class="text-xs text-slate-400 mt-1">Fast chargers, armor cases, tempered glasses and power banks.</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Customer Reception Desk -->
+        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border group hover:border-cyan-500/50 transition">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=700&q=80" alt="Customer Reception Desk" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold bg-emerald-600/90 text-white backdrop-blur">Customer Lounge</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-sm font-bold text-white">Direct Customer Reception</h3>
+            <p class="text-xs text-slate-400 mt-1">Instant diagnosis at the counter with direct technician advice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY / BACKEND SECTION: LAPTOP SERVICES & OS INSTALLATION -->
+  <section id="laptop-service" class="py-18 bg-gradient-to-b from-brand-dark via-[#091122] to-brand-navy border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="p-6 sm:p-8 rounded-3xl bg-brand-card/90 border border-slate-700/60 shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-wider">
+              <i class="fa-solid fa-laptop"></i> கூடுதல் சிறப்பு சேவை (Additional Value Service)
+            </div>
+            
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+              லேப்டாப் சர்வீஸ் செய்யப்படும் • ஓஎஸ் (OS) போடப்படும்
+            </h2>
+
+            <p class="text-sm text-slate-300 leading-relaxed">
+              எங்கள் திண்டல் கடையில் ஸ்மார்ட்போன்களுடன் சேர்த்து Dell, HP, Lenovo, Apple MacBook, Asus, Acer உள்ளிட்ட அனைத்து முன்னணி நிறுவன லேப்டாப்களுக்கும் முழுமையான சாப்ட்வேர் மற்றும் ஹார்டுவேர் சர்வீஸ் செய்து தரப்படும்.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3 rounded-xl bg-brand-dark border border-brand-border flex items-start gap-2.5">
+                <i class="fa-brands fa-windows text-blue-400 text-lg mt-0.5"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-white">Windows 11 / 10 & macOS நிறுவுதல்</h4>
+                  <p class="text-[11px] text-slate-400">அனைத்து டிரைவர்கள், ஆபிஸ் பேக் மற்றும் ஆண்டிவைரஸ் செட்டப்.</p>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-brand-dark border border-brand-border flex items-start gap-2.5">
+                <i class="fa-solid fa-gauge-high text-brand-cyan text-lg mt-0.5"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-white">SSD & RAM Speed Upgrade</h4>
+                  <p class="text-[11px] text-slate-400">மெதுவான லேப்டாப்களுக்கு M.2 NVMe SSD பொருத்தி 10 மடங்கு வேகம்.</p>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-brand-dark border border-brand-border flex items-start gap-2.5">
+                <i class="fa-solid fa-tv text-amber-400 text-lg mt-0.5"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-white">டிஸ்ப்ளே & கீபோர்டு மாற்றம்</h4>
+                  <p class="text-[11px] text-slate-400">உடைந்த FHD/IPS ஸ்கிரீன், பேட்டரி மற்றும் விசைப்பலகை மாற்றம்.</p>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-brand-dark border border-brand-border flex items-start gap-2.5">
+                <i class="fa-solid fa-fan text-emerald-400 text-lg mt-0.5"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-white">General Service & Thermal Paste</h4>
+                  <p class="text-[11px] text-slate-400">லேப்டாப் சூடாவதைத் தடுக்க கூலிங் ஃபேன் க்ளீனிங் & தெர்மல் பேஸ்ட்.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 bg-[#0a1226] border border-blue-500/30 rounded-2xl p-5 text-center space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl mx-auto">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">லேப்டாப் ஆலோசனை</h4>
+              <p class="text-xs text-slate-400 mt-1">கடைக்கு கொண்டு வந்து இலவசமாக செக் செய்து கொள்ளலாம்.</p>
+            </div>
+            <a href="https://wa.me/917373277700?text=வணக்கம்%20பிரபு%20மொபைல்ஸ்,%20எனது%20லேப்டாப்%20சர்வீஸ்%20/%20OS%20போடுவது%20சம்பந்தமாக%20விசாரிக்க%20வேண்டும்." target="_blank" class="block w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider transition">
+              <i class="fa-brands fa-whatsapp mr-1"></i> Laptop Enquiry on WhatsApp
+            </a>
+            <p class="text-[10px] text-slate-500">Same-Day OS Flashing Available</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GOOGLE MAPS REVIEWS WITH CUSTOMER PHOTOS -->
+  <section id="reviews" class="py-20 bg-brand-dark border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-brand-cyan text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-brands fa-google text-blue-400"></i> Google Maps Verified Reviews
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">வாடிக்கையாளர் மதிப்புரைகள் & புகைப்படங்கள்</h2>
+          <p class="text-slate-400 text-sm mt-2">கூகுள் மேப்ஸில் வாடிக்கையாளர்கள் பதிவு செய்த அசல் விமர்சனங்கள் மற்றும் சர்வீஸ் புகைப்படங்கள்.</p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <div class="flex items-center gap-3 bg-brand-card px-4 py-2.5 rounded-xl border border-brand-border">
+            <span class="text-2xl font-black text-white">5.0</span>
+            <div>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[10px] text-slate-400">Based on Google Reviews</p>
+            </div>
+          </div>
+          
+          <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center gap-2 shadow-lg shadow-blue-600/20 transition">
+            <i class="fa-solid fa-pen-to-square"></i> Rate Us on Google
+          </a>
+        </div>
+      </div>
+
+      <!-- Reviews Grid with Photos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Review 1: Display Replacement + Free Glass & Pouch Combo -->
+        <div class="bg-brand-card rounded-2xl border border-brand-border overflow-hidden p-5 flex flex-col justify-between hover:border-cyan-500/40 transition">
+          <div class="space-y-3">
+            <!-- Reviewer Header -->
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold text-sm">
+                K
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white flex items-center gap-1.5">
+                  Karthikeyan
+                  <i class="fa-solid fa-circle-check text-blue-400 text-[11px]" title="Google Verified Local Guide"></i>
+                </h4>
+                <p class="text-[11px] text-slate-400">VCET Student, Thindal • 2 days ago</p>
+              </div>
+            </div>
+
+            <!-- Stars -->
+            <div class="flex items-center gap-1 text-amber-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs text-slate-300 leading-relaxed">
+              "OnePlus போனுக்கு டிஸ்ப்ளே மாத்துனேன். அசல் குவாலிட்டி! சொன்ன மாதிரியே 11D டெம்பர் கிளாஸ் மற்றும் பேக் பவுச் ரெண்டுமே முற்றிலும் ஃப்ரீயா குடுத்தாங்க. சூப்பர் சர்வீஸ் திண்டல்!"
+            </p>
+
+            <!-- Customer Photo Attachment with Modal Trigger -->
+            <div class="pt-2">
+              <div class="relative rounded-xl overflow-hidden border border-brand-border group cursor-pointer" onclick="openPhotoModal('https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=80', 'Karthikeyan: Display Changed with Free Tempered Glass & Pouch')">
+                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80" alt="Customer Phone Photo" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                  <i class="fa-solid fa-magnifying-glass-plus text-base"></i> பெரிதாக்கிப் பார்க்க
+                </div>
+                <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/70 backdrop-blur text-[10px] text-amber-300 font-bold">
+                  📷 Free Glass & Case Fitted
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 mt-3 border-t border-brand-border/60 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Posted on Google Maps</span>
+            <i class="fa-brands fa-google text-slate-500"></i>
+          </div>
+        </div>
+
+        <!-- Review 2: Motherboard Water Damage Revival -->
+        <div class="bg-brand-card rounded-2xl border border-brand-border overflow-hidden p-5 flex flex-col justify-between hover:border-cyan-500/40 transition">
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-600 flex items-center justify-center text-white font-bold text-sm">
+                S
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white flex items-center gap-1.5">
+                  Senthil Kumar
+                  <i class="fa-solid fa-circle-check text-blue-400 text-[11px]" title="Google Verified Local Guide"></i>
+                </h4>
+                <p class="text-[11px] text-slate-400">Erode Town • 1 week ago</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 text-amber-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed">
+              "தண்ணீரில் விழுந்து டெட் ஆன போன். மற்ற கடைகளில் போச்சுன்னு சொன்னாங்க. இங்க மைக்ரோஸ்கோப் வைத்து போர்டு ஐசி ரெடி பண்ணி எல்லா டேட்டாவையும் எடுத்து தந்தாங்க. கிரேட் வொர்க்!"
+            </p>
+
+            <div class="pt-2">
+              <div class="relative rounded-xl overflow-hidden border border-brand-border group cursor-pointer" onclick="openPhotoModal('https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80', 'Senthil Kumar: Motherboard IC Repaired & Bench Tested')">
+                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Chip-level service photo" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                  <i class="fa-solid fa-magnifying-glass-plus text-base"></i> பெரிதாக்கிப் பார்க்க
+                </div>
+                <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/70 backdrop-blur text-[10px] text-brand-cyan font-bold">
+                  📷 Motherboard IC Test
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 mt-3 border-t border-brand-border/60 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Posted on Google Maps</span>
+            <i class="fa-brands fa-google text-slate-500"></i>
+          </div>
+        </div>
+
+        <!-- Review 3: Original Accessories Purchase -->
+        <div class="bg-brand-card rounded-2xl border border-brand-border overflow-hidden p-5 flex flex-col justify-between hover:border-cyan-500/40 transition">
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center text-white font-bold text-sm">
+                S
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white flex items-center gap-1.5">
+                  Suresh Babu
+                  <i class="fa-solid fa-circle-check text-blue-400 text-[11px]" title="Google Verified Local Guide"></i>
+                </h4>
+                <p class="text-[11px] text-slate-400">Thindal, Erode • 2 weeks ago</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 text-amber-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed">
+              "65W GaN அதிவேக அடாப்டர் மற்றும் பின்னல் கேபிள் வாங்கினேன். ஒரிஜினல் தரம், போன் ரொம்ப வேகமா சார்ஜ் ஏறுது. அக்சஸரீஸ் ரேக்குகளில் நிறைய கலெக்ஷன் வச்சிருக்காங்க."
+            </p>
+
+            <div class="pt-2">
+              <div class="relative rounded-xl overflow-hidden border border-brand-border group cursor-pointer" onclick="openPhotoModal('https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=80', 'Suresh Babu: 65W GaN Fast Charger Purchased')">
+                <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=600&q=80" alt="Fast charger photo" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                  <i class="fa-solid fa-magnifying-glass-plus text-base"></i> பெரிதாக்கிப் பார்க்க
+                </div>
+                <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/70 backdrop-blur text-[10px] text-emerald-400 font-bold">
+                  📷 Original 65W GaN Charger
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 mt-3 border-t border-brand-border/60 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Posted on Google Maps</span>
+            <i class="fa-brands fa-google text-slate-500"></i>
+          </div>
+        </div>
+
+        <!-- Review 4: Laptop Windows 11 OS & SSD Speed Upgrade -->
+        <div class="bg-brand-card rounded-2xl border border-brand-border overflow-hidden p-5 flex flex-col justify-between hover:border-cyan-500/40 transition">
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                D
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white flex items-center gap-1.5">
+                  Dinesh Kumar
+                  <i class="fa-solid fa-circle-check text-blue-400 text-[11px]" title="Google Verified Local Guide"></i>
+                </h4>
+                <p class="text-[11px] text-slate-400">Villarasampatti • 3 weeks ago</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 text-amber-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed">
+              "Dell லேப்டாப் ரொம்ப ஸ்லோவா இருந்தது. இங்க கொண்டு வந்தேன், புதிய NVMe SSD போட்டு Windows 11 OS போட்டு கொடுத்தாங்க. இப்போ 5 வினாடியில் ஆன் ஆகுது. தெர்மல் பேஸ்ட் வொர்க் அருமை!"
+            </p>
+
+            <div class="pt-2">
+              <div class="relative rounded-xl overflow-hidden border border-brand-border group cursor-pointer" onclick="openPhotoModal('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80', 'Dinesh Kumar: Laptop Windows 11 OS & SSD Upgrade')">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Laptop OS installation" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                  <i class="fa-solid fa-magnifying-glass-plus text-base"></i> பெரிதாக்கிப் பார்க்க
+                </div>
+                <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/70 backdrop-blur text-[10px] text-blue-300 font-bold">
+                  📷 Windows 11 + SSD Upgraded
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 mt-3 border-t border-brand-border/60 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Posted on Google Maps</span>
+            <i class="fa-brands fa-google text-slate-500"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Strip to Google Maps -->
+      <div class="mt-10 p-5 rounded-2xl bg-brand-card border border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <i class="fa-brands fa-google text-3xl text-blue-400"></i>
+          <div>
+            <h4 class="text-sm font-bold text-white">கூகுளில் பிரபு மொபைல்ஸ் பற்றிய மேலும் கருத்துகளைப் பார்க்க</h4>
+            <p class="text-xs text-slate-400">எங்கள் கடைக்கு வந்து சர்வீஸ் பெற்ற வாடிக்கையாளர்களின் அனுபவங்களை நேரடியாக கூகுள் மேப்பில் படிக்கலாம்.</p>
+          </div>
+        </div>
+        <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-brand-cyan border border-brand-border text-xs font-bold flex items-center gap-2 transition flex-shrink-0">
+          <span>View on Google Maps</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GOOGLE MAPS STORE LOCATION & CONTACT DETAILS -->
+  <section id="contact" class="py-20 bg-brand-navy border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan">எங்களை நேரில் சந்திக்க</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Store Address & Directions</h2>
+        <p class="text-slate-400 text-sm mt-2">ஈரோடு திண்டல் வேலாளர் கல்லூரி (VCET) ஜிம் எதிரே எங்கள் கடை அமைந்துள்ளது.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Address & Details Card -->
+        <div class="lg:col-span-5 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border flex flex-col justify-between space-y-6">
+          <div class="space-y-6">
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20 mb-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Open All 7 Days
+              </div>
+              <h3 class="text-xl font-bold text-white">PRABHU MOBILES (பிரபு மொபைல்ஸ்)</h3>
+              <p class="text-xs text-brand-cyan font-semibold">Smartphone Care, Accessories & Laptop Service</p>
+            </div>
+
+            <!-- Exact Verified Address -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-brand-cyan flex-shrink-0 mt-1">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="text-sm">
+                <p class="font-bold text-white">கடை முகவரி (Exact Store Location):</p>
+                <p class="text-slate-300 mt-1 leading-relaxed">
+                  Gate 1, Kaaraparai Piruvu, To Villarasampatti Road,<br>
+                  Opp. VCET Gym, Maruthi Nagar, Thindal,<br>
+                  Erode, Tamil Nadu - 638012
+                </p>
+                <span class="text-xs text-amber-400 mt-1 block">அடையாளம்: VCET Gym எதிரில், காரப்பாரை பிரிவு</span>
+              </div>
+            </div>
+
+            <!-- Timings -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 flex-shrink-0 mt-1">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="text-sm">
+                <p class="font-bold text-white">வேலை நேரம் (Opening Hours):</p>
+                <p class="text-slate-300 mt-1">திங்கள் - ஞாயிறு (All 7 Days):</p>
+                <p class="font-bold text-white">09:30 AM – 09:30 PM</p>
+              </div>
+            </div>
+
+            <!-- Phone & WhatsApp -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0 mt-1">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="text-sm">
+                <p class="font-bold text-white">தொடர்பு எண் (Call & WhatsApp):</p>
+                <a href="tel:+917373277700" class="text-white hover:text-brand-cyan font-bold block mt-1 text-base">
+                  +91 73732 77700
+                </a>
+                <p class="text-xs text-slate-400 mt-0.5">நேரடி அழைப்பு அல்லது வாட்ஸ்அப் மெசேஜ் செய்யலாம்</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="pt-4 border-t border-brand-border grid grid-cols-2 gap-3">
+            <a href="https://wa.me/917373277700?text=வணக்கம்%20பிரபு%20மொபைல்ஸ்,%20எனக்கு%20சர்வீஸ்%20விவரம்%20தேவை." target="_blank" class="py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg shadow-emerald-600/20">
+              <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+            </a>
+            <a href="tel:+917373277700" class="py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs flex items-center justify-center gap-2 border border-slate-700 transition">
+              <i class="fa-solid fa-phone text-brand-cyan"></i> Call Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Integration Card with CID Link -->
+        <div class="lg:col-span-7 bg-brand-card rounded-3xl border border-brand-border p-5 flex flex-col justify-between">
+          <div class="flex items-center justify-between pb-4 border-b border-brand-border">
+            <div class="flex items-center gap-2">
+              <i class="fa-brands fa-google text-blue-500"></i>
+              <span class="text-xs font-bold text-white">Google Maps Verified (Thindal, Erode)</span>
+            </div>
+            <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="text-xs font-bold text-brand-cyan hover:underline flex items-center gap-1.5">
+              <span>நேரடி மேப் திறக்க</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Map Box with Verified Direct CID Link -->
+          <div class="my-4 rounded-2xl overflow-hidden border border-brand-border relative bg-brand-navy min-h-[300px] sm:min-h-[340px] flex flex-col items-center justify-center p-6 text-center">
+            <div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(#00d2ff 1px, transparent 1px); background-size: 20px 20px;"></div>
+            
+            <div class="relative z-10 max-w-md space-y-4">
+              <div class="w-16 h-16 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-brand-cyan text-2xl mx-auto shadow-xl">
+                <i class="fa-solid fa-location-dot animate-bounce"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white">PRABHU MOBILES • திண்டல் ஈரோடு</h4>
+                <p class="text-xs text-slate-300 mt-1">Opp. VCET Gym, Maruthi Nagar, Thindal, Erode - 638012</p>
+                <div class="flex items-center justify-center gap-1 text-amber-400 text-xs mt-2">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="text-white font-bold ml-1">5.0 Star Google Rating</span>
+                </div>
+              </div>
+
+              <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg shadow-cyan-500/20 transition flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-diamond-turn-right"></i> Start Navigation in Google Maps
+                </a>
+              </div>
+            </div>
+
+            <div class="absolute bottom-3 left-3 bg-brand-dark/90 border border-brand-border px-3 py-1.5 rounded-lg text-[11px] text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-square-parking text-emerald-400"></i> வாடிக்கையாளர் வாகன பார்க்கிங் வசதி உண்டு
+            </div>
+          </div>
+
+          <div class="text-[11px] text-slate-400 flex items-center justify-between">
+            <span>கூகுள் மேப்பில் "Prabhu Mobiles Thindal Erode" என தேடினால் உடனடியாக கடை வழிகாட்டுதல் கிடைக்கும்.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#03060c] border-t border-brand-border text-slate-400 text-xs py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-baseline gap-1.5">
+            <span class="text-xl font-black text-white">PRABHU</span>
+            <span class="text-xl font-black text-brand-cyan">MOBILES</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-md">
+            பிரபு மொபைல்ஸ் - திண்டல், ஈரோடு. முன்னணி ஸ்மார்ட்போன்களுக்கு சிப்-லெவல் பழுது நீக்கம், ஒரிஜினல் டிஸ்ப்ளே மாற்றம் (இலவச கிளாஸ் + பவுச் ஆஃபர்), அக்சஸரீஸ் மற்றும் லேப்டாப் OS நிறுவுதல்.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            Gate 1, Kaaraparai Piruvu, Villarasampatti Road, Opp. VCET Gym, Thindal, Erode - 638012
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">முதன்மை சேவைகள்</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#offer" class="text-amber-400 hover:underline">டிஸ்ப்ளே ஆஃபர் (Free Glass+Pouch)</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition">Screen & Touch Fitting</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition">Battery Replacement</a></li>
+            <li><a href="#services" class="hover:text-brand-cyan transition">Motherboard IC Reballing</a></li>
+            <li><a href="#laptop-service" class="hover:text-brand-cyan transition">Laptop & OS Installation</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">தொடர்பு & நேரம்</h4>
+          <p class="text-xs text-slate-300">போன்: <a href="tel:+917373277700" class="text-white font-bold hover:text-brand-cyan">+91 73732 77700</a></p>
+          <p class="text-xs text-slate-300">நேரம்: காலை 9:30 AM – இரவு 9:30 PM</p>
+          <p class="text-xs text-emerald-400 font-semibold">வாரத்தின் அனைத்து 7 நாட்களும் திறந்திருக்கும்</p>
+          <div class="pt-2">
+            <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="text-xs text-brand-cyan hover:underline flex items-center gap-1 font-bold">
+              <i class="fa-solid fa-map-location-dot"></i> Google Maps Link
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-brand-border text-center text-slate-500 text-[11px] flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© 2026 PRABHU MOBILES (பிரபு மொபைல்ஸ்) - திண்டல், ஈரோடு. All rights reserved.</p>
+        <p class="text-slate-400 font-medium">5.0 Star Google Rating • Certified Technicians</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM STICKY QUICK ACTION BAR (Visible on small screens) -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-t border-brand-border px-4 py-2.5 flex items-center justify-between gap-3">
+    <a href="tel:+917373277700" class="flex-1 py-2.5 rounded-xl bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-2 border border-slate-700">
+      <i class="fa-solid fa-phone text-brand-cyan"></i> Call Now
+    </a>
+    <a href="https://wa.me/917373277700?text=வணக்கம்%20பிரபு%20மொபைல்ஸ்,%20எனது%20மொபைல்%20சர்வீஸ்%20சம்பந்தமாக%20பேச%20வேண்டும்." target="_blank" class="flex-1 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30">
+      <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+    </a>
+    <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="px-3.5 py-2.5 rounded-xl bg-blue-600 text-white text-xs font-bold flex items-center justify-center" title="Google Maps Directions">
+      <i class="fa-solid fa-diamond-turn-right"></i>
+    </a>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON (Desktop) -->
+  <div class="hidden lg:block fixed bottom-6 right-6 z-40">
+    <a href="https://wa.me/917373277700?text=வணக்கம்%20பிரபு%20மொபைல்ஸ்,%20எனது%20மொபைல்%20சர்வீஸ்%20சம்பந்தமாக%20விசாரிக்க%20வேண்டும்." target="_blank" class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-500/30 flex items-center justify-center text-3xl transition transform hover:scale-110 active:scale-95" title="WhatsApp Chat">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- LIGHTBOX PHOTO MODAL FOR CUSTOMER REVIEWS -->
+  <div id="photoModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="relative max-w-3xl w-full bg-brand-card rounded-2xl border border-brand-border overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-brand-border bg-brand-dark">
+        <span id="photoModalTitle" class="text-xs font-bold text-white truncate max-w-[80%]">Customer Review Photo</span>
+        <button onclick="closePhotoModal()" class="w-8 h-8 rounded-full bg-slate-800 text-slate-300 hover:text-white flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="p-2 sm:p-4 flex items-center justify-center bg-black/50">
+        <img id="photoModalImg" src="" alt="Enlarged Review" class="max-h-[75vh] w-auto max-w-full rounded-xl object-contain">
+      </div>
+      <div class="px-4 py-3 bg-brand-dark border-t border-brand-border text-center">
+        <a href="https://maps.google.com/?cid=128391347191636735" target="_blank" class="text-xs text-brand-cyan hover:underline font-bold inline-flex items-center gap-1.5">
+          <i class="fa-brands fa-google text-blue-400"></i> View Original Review on Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Mobile navigation toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuIcon.className = isHidden ? 'fa-solid fa-bars text-2xl' : 'fa-solid fa-xmark text-2xl';
+      });
+    }
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'fa-solid fa-bars text-2xl';
+      });
+    });
+
+    // Prefill consultation from service cards
+    function prefillConsultation(serviceName) {
+      const issueSelect = document.getElementById('diagIssue');
+      if (issueSelect) {
+        for (let i = 0; i < issueSelect.options.length; i++) {
+          if (issueSelect.options[i].text.toLowerCase().includes(serviceName.toLowerCase()) || serviceName.toLowerCase().includes(issueSelect.options[i].text.toLowerCase())) {
+            issueSelect.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      window.location.href = '#consultation';
+    }
+
+    // Send WhatsApp Diagnosis Inquiry (Zero Cost)
+    function sendDiagnosisWhatsApp() {
+      const brand = document.getElementById('diagBrand').value;
+      const issue = document.getElementById('diagIssue').value;
+      const model = document.getElementById('diagModel').value.trim() || 'Not specified';
+
+      const msg = encodeURIComponent(
+        `வணக்கம் பிரபு மொபைல்ஸ் (திண்டல்),\nஎனது போனுக்கு பழுது நீக்க ஆலோசனை தேவைப்படுகிறது:\n- பிராண்ட்: ${brand}\n- மாடல்: ${model}\n- பிரச்சனை: ${issue}\n(டிஸ்ப்ளே மாற்றினால் இலவச டெம்பர் கிளாஸ் + பவுச் ஆஃபர் பற்றியும் அறிய விரும்புகிறேன்).`
+      );
+      window.open(`https://wa.me/917373277700?text=${msg}`, '_blank');
+    }
+
+    // Filter Accessories
+    function filterAccessories(cat) {
+      document.querySelectorAll('.acc-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-cyan', 'text-slate-950');
+        btn.classList.add('bg-brand-card', 'text-slate-300');
+      });
+      event.target.classList.remove('bg-brand-card', 'text-slate-300');
+      event.target.classList.add('bg-brand-cyan', 'text-slate-950');
+
+      const items = document.querySelectorAll('.acc-item');
+      items.forEach(el => {
+        if (cat === 'all' || el.getAttribute('data-cat') === cat) {
+          el.style.display = 'flex';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+
+    // Enquire single accessory on WhatsApp
+    function enquireProduct(prodName) {
+      const msg = encodeURIComponent(`வணக்கம் பிரபு மொபைல்ஸ் திண்டல், உங்கள் கடையில் "${prodName}" அக்சஸரி ஸ்டாக் உள்ளதா என அறிய விரும்புகிறேன்.`);
+      window.open(`https://wa.me/917373277700?text=${msg}`, '_blank');
+    }
+
+    // Lightbox modal logic
+    function openPhotoModal(imgSrc, titleText) {
+      const modal = document.getElementById('photoModal');
+      const modalImg = document.getElementById('photoModalImg');
+      const modalTitle = document.getElementById('photoModalTitle');
+
+      modalImg.src = imgSrc;
+      modalTitle.innerText = titleText;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closePhotoModal() {
+      const modal = document.getElementById('photoModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Close modal on click outside content
+    document.getElementById('photoModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closePhotoModal();
+      }
+    });
+
+    // Demo Mobile Job Sheets Database
+    const demoJobs = {
+      'PM-1024': {
+        name: 'Karthik S. (திண்டல்)',
+        device: 'OnePlus 11R',
+        problem: 'Original Display Fitting (Free 11D Glass + Armor Pouch Applied)',
+        status: 'In Repair (பழுது நீக்கப்படுகிறது)',
+        step: 2,
+        notes: 'Original AMOLED panel bonded with OCA machine. Glue curing and final touch calibration in progress.'
+      },
+      'PM-1025': {
+        name: 'Murugesan (ஈரோடு)',
+        device: 'Apple iPhone 13',
+        problem: 'Battery Health Replacement (100% Calibrated)',
+        status: 'Ready for Pickup (வழங்கத் தயாராக உள்ளது)',
+        step: 4,
+        notes: 'Device completely tested, power backup verified and ready for collection at Thindal store counter.'
+      },
+      'PM-1026': {
+        name: 'Praveen Kumar (பெருந்துறை)',
+        device: 'Samsung Galaxy S22',
+        problem: 'Charging Port & Ultrasonic Mesh Cleansing',
+        status: 'Quality Check (தரப் பரிசோதனை)',
+        step: 3,
+        notes: 'Super-fast charging verified up to 25W. Earpiece decibel level cleared.'
+      }
+    };
+
+    function fillJobId(id) {
+      document.getElementById('jobSheetInput').value = id;
+      searchJobStatus();
+    }
+
+    function searchJobStatus() {
+      const id = document.getElementById('jobSheetInput').value.trim().toUpperCase();
+      const out = document.getElementById('jobStatusOutput');
+
+      if (!id) {
+        out.innerHTML = `<p class="text-xs text-red-400 text-center">தயவுசெய்து சரியான ஜாப் ஷீட் எண்ணை உள்ளிடவும்.</p>`;
+        return;
+      }
+
+      const job = demoJobs[id];
+      if (!job) {
+        out.innerHTML = `
+          <div class="p-4 rounded-xl bg-amber-950/30 border border-amber-600/30 text-center text-xs text-slate-300">
+            <p class="font-bold text-amber-400">ஜாப் ஷீட் எண் "${id}" காணப்படவில்லை.</p>
+            <p class="mt-1">தயவுசெய்து உங்கள் ரசீது எண்ணை சரிபார்க்கவும் அல்லது மாதிரி எண் <strong>PM-1024</strong> அல்லது <strong>PM-1025</strong> முயற்சிக்கவும்.</p>
+            <p class="mt-2 text-brand-cyan">உடனடி தகவலுக்கு அழைக்கவும்: +91 73732 77700</p>
+          </div>
+        `;
+        return;
+      }
+
+      const steps = ['பரிசோதனை (Diagnosis)', 'பாகங்கள் ஒதுக்கீடு', 'பழுது நீக்கம் (In Repair)', 'தரப் பரிசோதனை', 'தயாராக உள்ளது (Ready)'];
+      let stepsHtml = '';
+
+      steps.forEach((st, idx) => {
+        const isDone = idx <= job.step;
+        const isCurrent = idx === job.step;
+        stepsHtml += `
+          <div class="flex-1 flex flex-col items-center text-center">
+            <div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${
+              isCurrent 
+                ? 'bg-brand-cyan text-slate-950 ring-4 ring-cyan-500/20 animate-pulse' 
+                : isDone 
+                  ? 'bg-emerald-500 text-white' 
+                  : 'bg-slate-800 text-slate-500 border border-slate-700'
+            }">
+              ${isDone && !isCurrent ? '<i class="fa-solid fa-check"></i>' : idx + 1}
+            </div>
+            <span class="text-[10px] mt-2 font-medium ${isCurrent ? 'text-brand-cyan font-bold' : isDone ? 'text-slate-300' : 'text-slate-500'}">
+              ${st}
+            </span>
+          </div>
+        `;
+      });
+
+      out.innerHTML = `
+        <div class="space-y-5 animate-in fade-in duration-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-brand-border">
+            <div>
+              <span class="text-xs font-bold text-brand-cyan font-mono">TICKET: ${id}</span>
+              <h4 class="text-base font-bold text-white">${job.device}</h4>
+              <p class="text-xs text-slate-400">வாடிக்கையாளர்: ${job.name} | குறைபாடு: ${job.problem}</p>
+            </div>
+            <div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full ${job.step === 4 ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40' : 'bg-cyan-500/20 text-brand-cyan border border-cyan-500/40'}">
+                ● ${job.status}
+              </span>
+            </div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="flex justify-between items-start pt-2">
+            ${stepsHtml}
+          </div>
+
+          <!-- Bench Observation -->
+          <div class="p-3.5 rounded-xl bg-[#080d1d] border border-brand-border text-xs">
+            <span class="font-bold text-slate-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-screwdriver-wrench text-brand-cyan"></i> டெக்னீஷியன் குறிப்பு (Bench Log):
+            </span>
+            <p class="text-slate-400 mt-1">${job.notes}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    // Initialize tracker with PM-1024 on load
+    searchJobStatus();
+  </script>
+</body>
+</html>
